@@ -8,7 +8,7 @@ Step 3 Install adb,git,curl : Debian = sudo apt-get install adb git wget
                             : Redhat = sudo dnf install adb git wget 
                             : Arch   = sudo pacman -S android-tools git wget
 
-Step 4 clone repo with : git clone https://github.com/darknet444/HTC-Desire-650-debloat.git  
+Step 4 clone repo with : git clone https://github.com/darknet444/Motorola-G8-Power-Lite-Debloat.git 
                                   
 
 Step 5 make script executable run : chmod +x Motorola-G8-Power-Lite.sh
