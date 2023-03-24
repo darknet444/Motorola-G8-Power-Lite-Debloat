@@ -16,7 +16,6 @@ adb shell pm uninstall --user 0 com.motorola.help
 adb shell pm uninstall --user 0 com.motorola.motocare.internal
 adb shell pm uninstall --user 0 com.motorola.bach.modemstats
 adb shell pm uninstall --user 0 com.lmi.motorola.rescuesecurity
-#adb shell pm uninstall --user 0 com.motorola.launcher3
 
 echo " Removing Facebook Apps " 
 adb shell pm uninstall --user 0 com.facebook.services
