@@ -76,7 +76,6 @@ adb shell pm uninstall --user 0 com.google.android.apps.wellbeing
 adb shell pm uninstall --user 0 com.google.android.apps.nbu.files
 adb shell pm uninstall --user 0 com.google.android.apps.docs
 adb shell pm uninstall --user 0 com.google.android.apps.maps
-adb shell pm uninstall --user 0 com.google.android.modulemetadata
 adb shell pm uninstall --user 0 com.google.android.calculator
 adb shell pm uninstall --user 0 com.google.android.gms
 adb shell pm uninstall --user 0 com.google.android.gsf
