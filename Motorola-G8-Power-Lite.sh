@@ -16,6 +16,7 @@ adb shell pm uninstall --user 0 com.motorola.help
 adb shell pm uninstall --user 0 com.motorola.motocare.internal
 adb shell pm uninstall --user 0 com.motorola.bach.modemstats
 adb shell pm uninstall --user 0 com.lmi.motorola.rescuesecurity
+#adb shell pm uninstall --user 0 com.motorola.launcher3
 
 echo " Removing Facebook Apps " 
 adb shell pm uninstall --user 0 com.facebook.services
@@ -80,7 +81,7 @@ adb shell pm uninstall --user 0 com.google.android.calculator
 adb shell pm uninstall --user 0 com.google.android.gms
 adb shell pm uninstall --user 0 com.google.android.gsf
 adb shell pm uninstall --user 0 com.google.android.ims
-adb shell pm uninstall --user 0 com.google.android.tts
+#adb shell pm uninstall --user 0 com.google.android.tts
 adb shell pm uninstall --user 0 com.google.android.gmsintegration
 adb shell pm uninstall --user 0 com.google.android.videos
 adb shell pm uninstall --user 0 com.google.android.feedback
@@ -118,6 +119,7 @@ adb shell pm uninstall --user 0 com.android.partnerbrowsercustomizations.tmobile
 adb shell pm uninstall --user 0 com.android.cts.priv.ctsshim
 adb shell pm uninstall --user 0 com.android.cts.ctsshim
 adb shell pm uninstall --user 0 com.android.localtransport
+adb shell pm uninstall --user 0 com.android.musicfx
 
 echo " Removing Overlay Apps "
 adb shell pm uninstall --user 0 com.google.android.overlay.modules.ext.services
