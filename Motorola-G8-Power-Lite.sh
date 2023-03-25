@@ -116,7 +116,6 @@ adb shell pm uninstall --user 0 com.google.android.setupwizard
 adb shell pm uninstall --user 0 com.google.android.partnersetup
 adb shell pm uninstall --user 0 com.google.android.dialer
 adb shell pm uninstall --user 0 com.google.android.contacts
-adb shell pm uninstall --user 0 com.google.android.syncadapters.contacts
 adb shell pm uninstall --user 0 com.google.android.apps.turbo
 adb shell pm uninstall --user 0 com.google.android.projection.gearhead
 
