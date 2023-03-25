@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo " Disable animations "
+adb shell settings put global window_animation_scale 0.0 && adb shell settings put global transition_animation_scale 0.0 && adb shell settings put global animator_duration_scale 0.0
+
+echo " Clearing cache and data "
 for package in $(adb shell pm list packages -f | sed -e "s/.*=//" -e "s/\r//"); do
     echo "Clearing cache for $package ..."
     adb shell pm clear "${package}"
@@ -145,7 +149,7 @@ adb install F-Droid.apk
 # Waiting whene apps are uninstalled
 sleep 10;
 
-
+echo " Clearing cache and data "
 for package in $(adb shell pm list packages -f | sed -e "s/.*=//" -e "s/\r//"); do
     echo "Clearing cache for $package ..."
     adb shell pm clear "${package}"
