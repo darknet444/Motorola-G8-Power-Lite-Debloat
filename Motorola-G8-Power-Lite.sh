@@ -1,5 +1,10 @@
 #!/bin/bash
 
+for package in $(adb shell pm list packages -f | sed -e "s/.*=//" -e "s/\r//"); do
+    echo "Clearing cache for $package ..."
+    adb shell pm clear "${package}"
+done 
+
 echo " Removing Motorola Apps "
 adb shell pm uninstall --user 0 com.motorola.motocare
 adb shell pm uninstall --user 0 com.motorola.ccc.devicemanagement
@@ -139,6 +144,12 @@ adb install F-Droid.apk
 
 # Waiting whene apps are uninstalled
 sleep 10;
+
+
+for package in $(adb shell pm list packages -f | sed -e "s/.*=//" -e "s/\r//"); do
+    echo "Clearing cache for $package ..."
+    adb shell pm clear "${package}"
+done
 
 echo "rebooting device"
 adb reboot 
