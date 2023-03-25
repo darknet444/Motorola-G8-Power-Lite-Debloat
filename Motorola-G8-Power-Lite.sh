@@ -61,7 +61,7 @@ adb shell pm uninstall --user 0 com.android.theme.color.purple
 
 echo " Removing Google Apps "
 adb shell pm uninstall --user 0 com.google.android.youtube
-adb shell pm uninstall --user 0 com.google.android.ext.services
+#adb shell pm uninstall --user 0 com.google.android.ext.services
 adb shell pm uninstall --user 0 com.google.android.googlequicksearchbox
 adb shell pm uninstall --user 0 com.google.android.onetimeinitializer
 adb shell pm uninstall --user 0 com.google.android.ext.shared
@@ -87,7 +87,6 @@ adb shell pm uninstall --user 0 com.google.android.feedback
 adb shell pm uninstall --user 0 com.google.android.printservice.recommendation
 adb shell pm uninstall --user 0 com.google.android.apps.photos
 adb shell pm uninstall --user 0 com.google.android.calendar
-adb shell pm uninstall --user 0 com.google.android.documentsui
 adb shell pm uninstall --user 0 com.google.android.gms.location.history
 adb shell pm uninstall --user 0 com.google.android.apps.youtube.music
 adb shell pm uninstall --user 0 com.google.android.inputmethod.latin
@@ -106,7 +105,6 @@ adb shell pm uninstall --user 0 com.android.fmradio
 adb shell pm uninstall --user 0 com.android.protips
 adb shell pm uninstall --user 0 com.android.vending
 adb shell pm uninstall --user 0 com.android.egg
-adb shell pm uninstall --user 0 com.android.nfc
 adb shell pm uninstall --user 0 com.android.printspooler
 adb shell pm uninstall --user 0 com.android.dreams.basic
 adb shell pm uninstall --user 0 com.android.chrome
@@ -115,10 +113,9 @@ adb shell pm uninstall --user 0 android.auto_generated_rro_vendor__
 adb shell pm uninstall --user 0 com.android.bips
 adb shell pm uninstall --user 0 com.android.emergency
 adb shell pm uninstall --user 0 com.android.partnerbrowsercustomizations.tmobile
-adb shell pm uninstall --user 0 com.android.cts.priv.ctsshim
-adb shell pm uninstall --user 0 com.android.cts.ctsshim
-adb shell pm uninstall --user 0 com.android.localtransport
-adb shell pm uninstall --user 0 com.android.musicfx
+#adb shell pm uninstall --user 0 com.android.cts.priv.ctsshim
+#adb shell pm uninstall --user 0 com.android.cts.ctsshim
+#adb shell pm uninstall --user 0 com.android.musicfx
 
 echo " Removing Overlay Apps "
 adb shell pm uninstall --user 0 com.google.android.overlay.modules.ext.services
@@ -148,3 +145,4 @@ adb reboot
 
 # End of Script 
 echo done 
+
